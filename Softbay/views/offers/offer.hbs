@@ -1,0 +1,17 @@
+<tr>
+    <td class="">{{@key}}</td>
+    <td class="">{{this.name}}</td>
+    <td class="description">{{{this.description}}}</td>
+    <td class="">{{this.price}}</td>
+    <td>
+        <a href='#/order/details/{{_id}}' class="btn-primary btn">Order details</a>
+    </td>
+    <td>
+        {{#if isCreatedByUser}}
+        <a href='#/order/delete/{{_id}}' class="btn-danger btn">Delete</a>
+        <a href='#/order/edit/{{_id}}' class="btn-info btn">Edit</a>
+        {{else}}
+        <a href="" class="btn-warning btn">Buy</a>
+        {{/if}}
+    </td>
+</tr>
